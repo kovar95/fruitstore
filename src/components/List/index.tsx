@@ -84,7 +84,7 @@ const List: FC = () => {
               </Stack>
               <Stack gap={3}>
                 {mappedItems[code].map((item) => (
-                  <Item item={item} />
+                  <Item key={item.id} item={item} />
                 ))}
               </Stack>
             </Stack>
